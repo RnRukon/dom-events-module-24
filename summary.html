@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="mouse-header">More Mouse Event</h1>
+
+    <input id="email-field" type="text" placeholder="Email:">
+    <button onclick="handleClick()">Click me:green</button>
+
+
+
+
+
+    <script>
+        // document.getElementById('mouse-header').addEventListener('mousemove', function () {
+        //     console.log('mouse moving giving me ');
+        // })
+
+        // document.getElementById('mouse-header').addEventListener('mouseenter', function () {
+        //     console.log('mouse is entering giving me ');
+        // })
+
+        // document.getElementById('mouse-header').addEventListener('mouseout', function () {
+        //     console.log('mouse is mouseout giving me ');
+        // })
+
+        document.getElementById('mouse-header').addEventListener('Messaging', function () {
+            console.log('mouse is messaging giving me ');
+        })
+
+        document.getElementById('email-field').addEventListener('keyup', function () {
+            // console.log(event.target.value);
+        })
+
+        function handleClick() {
+            document.body.style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+
+</html>
